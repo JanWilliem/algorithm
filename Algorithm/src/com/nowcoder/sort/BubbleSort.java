@@ -1,11 +1,13 @@
 package com.nowcoder.sort;
 
+import com.nowcoder.utils.ArrayUtils;
+
 public class BubbleSort {
 	public static void main(String[] args) {
 		int[] A = { 1, 2, 3, 5, 2, 3 };
 		int n = 6;
 		int[] r = bubbleSort(A, n);
-		System.err.println(r);
+		ArrayUtils.printArray(r);
 	}
 
 	private static int[] bubbleSort(int[] A, int n) {
